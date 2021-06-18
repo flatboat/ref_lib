@@ -73,7 +73,9 @@ client.set_event_callback("paint", onPaint)
 Categories go as following:
 * Ragebot
 * Antiaim
+* Fake lag
 * Visuals
+* Chams
 * Misc
 
 Can't find something?

@@ -49,11 +49,11 @@ You must have a gamesense.pub account and an active subscription to use the libr
 
 ### Installation
 
-##For normal users
+For normal users
 1. Subscribe to the library on the workshop.
 2. Load gamesense
 
-##For developers
+For developers
 Complete the two steps above, then require the lua like the example below:
 ```lua
 --"note: this is a horrible example, as it would constantly log"
@@ -70,13 +70,13 @@ end
 
 client.set_event_callback("paint", onPaint)
 ```
-##Categories go as following:
+Categories go as following:
 * Ragebot
 * Antiaim
 * Visuals
 * Misc
 
-##Can't find something?
+Can't find something?
 If you can't find a menu item you're looking for, it's probably because:
 * I put it in a different category than what it is in the menu/renamed it. (You can look on the forums and find it in the source) - I renamed Anti-aim correction to resolver.
 * You're looking for a menu item I did not include (Legitbot, Playerlist, Configs, Lua, and Skinchanger tabs are not referenced.)

@@ -54,6 +54,7 @@ For normal users
 2. Load gamesense
 
 For developers<br>
+
 Complete the two steps above, then require the lua like the example below:
 ```lua
 --"note: this is a horrible example, as it would constantly log"

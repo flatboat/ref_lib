@@ -84,6 +84,8 @@ If you can't find a menu item you're looking for, it's probably because:
 * You're looking for a menu item I did not include (Legitbot, Playerlist, Configs, Lua, and Skinchanger tabs are not referenced.)
 * You didn't spell the reference item correctly: I replaced all spaces in menu items with an underscore.
 
+Getting an error that says you're using a table incorrectly?
+* You need to put a table index at the end of your call to the library (ref.ragebot.enabled[1], etcetera)
 
 <!-- CONTRIBUTING -->
 ## Contributing

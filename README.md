@@ -61,7 +61,7 @@ Complete the two steps above, then require the lua like the example below:
 --"anti-aim is enabled in console if aa is enabled."
 --"for proper implementation use your own callbacks, preferably"
 --"through ui.set_callback"
-local ref = require"gamesense/ref_lib"
+local ref = require"ref_lib"
 
 local function onPaint()
     if ui.get(ref.antiaim.enabled) then

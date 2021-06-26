@@ -50,7 +50,7 @@ You must have a gamesense.pub account and an active subscription to use the libr
 ### Installation
 
 For normal users
-1. Subscribe to the library on the workshop.
+1. Download the library (ref_lib.lua) to your csgo directory and leave it be.
 2. Load gamesense
 
 For developers<br>

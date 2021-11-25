@@ -109,6 +109,7 @@ Categories go as following:
 	- quick_stop_options - returns a string(s)
 	- quick_peek_assist - returns a table as following: [boolean, hotkey mode]
 	- quick_peek_assist_mode - returns a table as following: [string(s), color table]
+	- quick_peek_assist_distance - returns an integer
 	- resolver - returns a boolean
 	- resolver_override - returns a hotkey state/mode
 	- prefer_body_aim - returns a boolean
@@ -204,24 +205,18 @@ Categories go as following:
 
 - ref.chams:
 	- player - returns a table as following: [boolean, color table]
-	- player_behind_wall - returns a table as following: [boolean, color table, cham mode, accent color)] - will only have accent color if cham mode supports it
-	
+	- player_behind_wall - returns a table as following: [boolean, color table, cham mode, accent color] - will only have accent color if cham mode supports it
 	- teammate - returns a table as following: [boolean, color table]
-	- teammate_behind_wall - returns a table as following: [boolean, color table, cham mode, accent color)] - will only have accent color if cham mode supports it
-	
-	- local_player - returns a table as following: [boolean, color table, cham mode, accent color)] - will only have accent color if cham mode supports it
-	
-	- local_player_fake - returns a table as following: [boolean, color table, cham mode, accent color)] - will only have accent color if cham mode supports it
+	- teammate_behind_wall - returns a table as following: [boolean, color table, cham mode, accent color] - will only have accent color if cham mode supports it
+	- local_player - returns a table as following: [boolean, color table, cham mode, accent color] - will only have accent color if cham mode supports it
+	- local_player_fake - returns a table as following: [boolean, color table, cham mode, accent color] - will only have accent color if cham mode supports it
+	- on_shot - returns a table as following: [boolean, color table, cham mode, accent color] - will only have accent color if cham mode supports it
 	- ragdolls - returns a boolean
-	
-	- hands - returns a table as following: [boolean, color table, cham mode, accent color)] - will only have accent color if cham mode supports it
-	
-	- weapon_viewmodel - returns a table as following: [boolean, color table, cham mode, accent color)] - will only have accent color if cham mode supports it
-	
+	- hands - returns a table as following: [boolean, color table, cham mode, accent color] - will only have accent color if cham mode supports it
+	- weapon_viewmodel - returns a table as following: [boolean, color table, cham mode, accent color] - will only have accent color if cham mode supports it
+	- weapons - returns a table as following: [boolean, color table, cham mode, accent color] - will only have accent color if cham mode supports it
 	- disable_model_occlusion - returns a boolean
-	
 	- shadow - returns a table as following: [boolean, color table]
-	
 	- props - returns a table as following: [boolean, color table]
 
 - ref.misc:

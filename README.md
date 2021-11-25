@@ -61,7 +61,11 @@ Complete the two steps above, then require the lua like the example below:
 --"anti-aim is enabled in console if aa is enabled."
 --"for proper implementation use your own callbacks, preferably"
 --"through ui.set_callback"
-local ref = require"ref_lib"
+local ref_lib_found, ref = pcall(require, "ref_lib")
+
+if not ref_lib_found then
+    error("Default menu referencing library not found, download from: https://raw.githubusercontent.com/descisgay/ref_lib/main/ref_lib.lua")
+end
 
 local function onPaint()
     if ui.get(ref.antiaim.enabled) then

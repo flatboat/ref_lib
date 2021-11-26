@@ -83,9 +83,13 @@ Categories go as following:
 * Ragebot
 * Antiaim
 * Fake lag
+* Legitaimbot
+* Triggerbot
 * Visuals
 * Chams
 * Misc
+* SkinChanger
+* PList
 
 ### Calls:
 - ref.ragebot:

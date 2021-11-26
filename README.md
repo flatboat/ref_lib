@@ -150,6 +150,38 @@ Categories go as following:
 	- variance - returns an integer
 	- limit - returns an integer
 
+- ref.legitaimbot
+	- enabled - returns a table as following: [boolean, hotkey mode]
+	- speed - returns an integer
+	- speed_in_attack - returns an integer
+	- speed_scale_fov - returns an integer
+	- maximum_lock_on_time - returns an integer
+	- reaction_time - returns an integer
+	- maximum_fov - returns an integer
+	- recoil_compensation - returns a table as following: [pitch (integer), yaw (integer)]
+	- quick_stop - returns a boolean
+	- aim_through_smoke - returns a boolean
+	- aim_while_blind - returns a boolean
+	- head - returns a boolean
+	- chest - returns a boolean
+	- stomach - returns a boolean
+	- accuracy_boost - returns a string
+	- accuracy_boost_range - returns an integer
+	- standalone_recoil_compensation - returns a boolean
+
+- ref.triggerbot
+	- enabled - returns a table as following: [boolean, hotkey mode]
+	- minimum_hitchance - returns an integer
+	- reaction_time - returns an integer
+	- burst_fire - returns a table as following: [boolean, integer]
+	- minimum_damage - returns an integer
+	- automatic_penetration - returns a boolean
+	- shoot_through_smoke - returns a boolean 	
+	- shoot_while_blind - returns a boolean
+	- head - returns a boolean
+	- chest - returns a boolean
+	- stomach - returns a boolean
+
 - ref.visuals:
 	- activation_type - returns a hotkey state/mode
 	- teammates - returns a boolean
@@ -266,6 +298,30 @@ Categories go as following:
 	- lock_menu_layout - returns a boolean
 	- sv_maxusrcmdprocessticks - returns an integer
 	- sv_maxunlag - returns an integer
+
+- ref.skinchanger
+	- override_knife - returns a table as following: [boolean, knife]
+	- enabled - returns a boolean (note: this is for the skinchanger itself, where you select the skin.)
+	- stattrak - returns a boolean
+	- quality - returns an integer
+	- seed - returns an integer
+	- filter_by_weapon - returns a boolean
+	- skin - returns a string
+	- override_gloves - returns a table as following: [boolean, glove type, string]
+
+- ref.plist
+	- add_to_whitelist - returns a boolean
+	- allow_shared_esp_updates - returns a boolean
+	- disable_visuals - returns a boolean
+	- high_priority - returns a boolean
+	- force_pitch - returns a boolean
+	- force_pitch_value - returns an integer
+	- force_body_yaw - returns a boolean
+	- force_body_yaw_value - returns an integer
+	- correction_active - returns a boolean
+	- override_prefer_body_aim - returns a boolean
+	- override_safe_point - returns a boolean
+	- apply_to_all - returns nothing to my knowledge (you can do something with it, i just don't know what.)
 
 Can't find something?
 If you can't find a menu item you're looking for, it's probably because:

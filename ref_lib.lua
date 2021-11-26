@@ -67,6 +67,40 @@ local fakelag = {
     limit = ui_reference("AA", "Fake lag", "Limit")
 }
 
+local legitaimbot = {
+    enabled = ui_reference("LEGIT", "Aimbot", "Enabled"),
+    speed = ui_reference("LEGIT", "Aimbot", "Speed"),
+    speed_in_attack = ui_reference("LEGIT", "Aimbot", "Speed (in attack)"),
+    speed_scale_fov = ui_reference("LEGIT", "Aimbot", "Speed scale - FOV"),
+    maximum_lock_on_time = ui_reference("LEGIT", "Aimbot", "Maximum lock-on time"),
+    reaction_time = ui_reference("LEGIT", "Aimbot", "Reaction time"),
+    maximum_fov = ui_reference("LEGIT", "Aimbot", "Maximum FOV"),
+    recoil_compensation = {ui_reference("LEGIT", "Aimbot", "Recoil compensation (P/Y)")},
+    quick_stop = ui_reference("LEGIT", "Aimbot", "Quick stop"),
+    aim_through_smoke = ui_reference("LEGIT", "Aimbot", "Aim through smoke"),
+    aim_while_blind = ui_reference("LEGIT", "Aimbot", "Aim while blind"),
+    head = ui_reference("LEGIT", "Aimbot", "Head"),
+    chest = ui_reference("LEGIT", "Aimbot", "Chest"),
+    stomach = ui_reference("LEGIT", "Aimbot", "Stomach"),
+    accuracy_boost = ui_reference("LEGIT", "Other", "Accuracy boost"),
+    accuracy_boost_range = ui_reference("LEGIT", "Other", "Accuracy boost range"),
+    standalone_recoil_compensation = ui_reference("LEGIT", "Other", "Standalone recoil compensation"),
+}
+
+local triggerbot = {
+    enabled = {ui_reference("LEGIT", "Triggerbot", "Enabled")},
+    minimum_hitchance = ui_reference("LEGIT", "Triggerbot", "Minimum hit chance"),
+    reaction_time = ui_reference("LEGIT", "Triggerbot", "Reaction time"),
+    burst_fire = {ui_reference("LEGIT", "Triggerbot", "Burst fire")},
+    minimum_damage = ui_reference("LEGIT", "Triggerbot", "Minimum damage"),
+    automatic_penetration = ui_reference("LEGIT", "Triggerbot", "Automatic penetration"),
+    shoot_through_smoke = ui_reference("LEGIT", "Triggerbot", "Shoot through smoke"),
+    shoot_while_blind = ui_reference("LEGIT", "Triggerbot", "Shoot while blind"),
+    head = ui_reference("LEGIT", "Triggerbot", "Head"),
+    chest = ui_reference("LEGIT", "Triggerbot", "Chest"),
+    stomach = ui_reference("LEGIT", "Triggerbot", "Stomach"),
+}
+
 local visuals = {
     activation_type = ui_reference("VISUALS", "Player ESP", "Activation type"),
     teammates = ui_reference("VISUALS", "Player ESP", "Teammates"),
@@ -206,11 +240,41 @@ local misc = {
     sv_maxunlag = ui_reference("MISC", "Settings", "sv_maxunlag")
 }
 
+local skinchanger = {
+    override_knife = {ui_reference("SKINS", "Knife options", "Override knife")},
+    enabled = ui_reference("SKINS", "Weapon skin", "Enabled"),
+    stattrak = ui_reference("SKINS", "Weapon skin", "Stattrak"),
+    quality = ui_reference("SKINS", "Weapon skin", "Quality"),
+    seed = ui_reference("SKINS", "Weapon skin", "Seed"),
+    filter_by_weapon = ui_reference("SKINS", "Weapon skin", "Filter by weapon"),
+    skin = ui_reference("SKINS", "Weapon skin", "Skin"),
+    override_gloves = {ui_reference("SKINS", "Glove options", "Override gloves")},
+}
+
+local plist = {
+    add_to_whitelist = ui_reference("Players", "Adjustments", "Add to whitelist"),
+    allow_shared_esp_updates = ui_reference("Players", "Adjustments", "Allow shared ESP updates"),
+    disable_visuals = ui_reference("Players", "Adjustments", "Disable visuals"),
+    high_priority = ui_reference("Players", "Adjustments", "High priority"),
+    force_pitch = ui_reference("Players", "Adjustments", "Force pitch"),
+    force_pitch_value = ui_reference("Players", "Adjustments", "Force pitch value"),
+    force_body_yaw = ui_reference("Players", "Adjustments", "Force body yaw"),
+    force_body_yaw_value = ui_reference("Players", "Adjustments", "Force body yaw value"),
+    correction_active = ui_reference("Players", "Adjustments", "Correction active"),
+    override_prefer_body_aim = ui_reference("Players", "Adjustments", "Override prefer body aim"),
+    override_safe_point = ui_reference("Players", "Adjustments", "Override safe point"),
+    apply_to_all = ui_reference("Players", "Adjustments", "Apply to all"),
+}
+
 return {
     ragebot = ragebot,
     antiaim = antiaim,
+    legitaimbot = legitaimbot,
+    triggerbot = triggerbot,
     fakelag = fakelag,
     visuals = visuals,
     chams = chams,
-    misc = misc
+    misc = misc,
+    skinchanger = skinchanger,
+    plist = plist,
 }
